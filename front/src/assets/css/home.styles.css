@@ -1,0 +1,62 @@
+.banner {
+    display: grid;
+    place-content: center;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh;
+}
+.main-title {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 60px;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px #000000;
+    letter-spacing: 10px; 
+    line-height: 1; 
+}
+.main-subtitle {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 30px;
+    color: #141411;
+    text-shadow: 2px 2px 4px #FFD700;
+    letter-spacing: 10px;
+    line-height: 1;
+}
+.main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-button button {
+    background-color: rgb(220, 235, 9);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 2s ease;
+}
+.main-button button:hover {
+    background-color: rgb(14, 12, 12);
+}
+.main-button button:active {
+    background-color: #f5d105;
+    color: white;
+    transition: 0.5s;
+    letter-spacing: 5px;
+}
+.main-button button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(20, 18, 18, 0.3);
+    transition: width 1s ease, height 2s ease;
+}
+.main-button button:hover::before {
+    width: 200%;
+    height: 200%
+  }

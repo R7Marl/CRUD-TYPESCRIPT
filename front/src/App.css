@@ -1,0 +1,16 @@
+body {
+    background-image: url("./assets/images/pexels-leonardho-1552252.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold; /* Agrega un peso de fuente más grueso */
+  }

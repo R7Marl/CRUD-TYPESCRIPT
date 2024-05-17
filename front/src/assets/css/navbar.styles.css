@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar .navbar-center ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.navbar .navbar-center ul li button {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    opacity: 1;
+    display: flex;
+    text-decoration: none;
+}
+
+.navbar .navbar-center ul li button:hover {
+    text-decoration: underline;
+    transform: translateY(5px);
+}
